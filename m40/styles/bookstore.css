@@ -1,0 +1,39 @@
+
+#container {
+	float: left;
+	width: 100%;
+	margin-bottom: 2em;
+}
+#content {
+	margin: 0; /* 21em 16em Margins for content column. Should be 0, #sidebar width, 0, #secondary-nav width */
+}
+ 
+
+/* padding for all child elements within container */
+#content *, 
+#secondary-nav *, 
+#sidebar * {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* NO padding for all grandchild+ elements within container */
+#content * *, 
+#secondary-nav * *, 
+#sidebar * * {
+  padding: 0;
+}
+
+ 
+.clear-after:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+.clear-after {display: inline-block;}
+/* backslash hack hides from IE Mac \*/
+	* html .clear-after {height: 1%;}
+	.clear-after {display: block;}
+/* end backslash hack */
