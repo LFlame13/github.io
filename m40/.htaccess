@@ -1,0 +1,2 @@
+# own 404 page (on hosting at the domain root: ErrorDocument 404 /404.html)
+ErrorDocument 404 /m40/404.html
